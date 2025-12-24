@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | FitLife Gym</title>
+    <meta name="description" content="Explore FitLife Gym's comprehensive services including personal training, group classes, and specialized programs">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="FitLife Gym Home">
+                    <h1>FitLife<span>Gym</span></h1>
+                </a>
+                
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" class="btn btn-primary">Join Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Services Hero -->
+        <section class="page-hero" aria-labelledby="services-heading">
+            <div class="container">
+                <h1 id="services-heading">Our Services</h1>
+                <p class="page-subtitle">Comprehensive fitness solutions tailored to your goals and lifestyle</p>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview" aria-labelledby="overview-heading">
+            <div class="container">
+                <h2 id="overview-heading" class="visually-hidden">Services Overview</h2>
+                
+                <div class="services-categories">
+                    <div class="category-tabs" role="tablist" aria-label="Service Categories">
+                        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="personal-training" id="tab-1">
+                            Personal Training
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="group-classes" id="tab-2">
+                            Group Classes
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="specialized" id="tab-3">
+                            Specialized Programs
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="facilities" id="tab-4">
+                            Facilities
+                        </button>
+                    </div>
+                    
+                    <div class="category-content">
+                        <div class="tab-panel active" id="personal-training" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="service-detail">
+                                <div class="service-image">
+                                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w-800&q=80" alt="Personal trainer working with client on exercise form" loading="lazy">
+                                </div>
+                                <div class="service-info">
+                                    <h3>One-on-One Personal Training</h3>
+                                    <p>Get customized workout plans and one-on-one coaching from our certified personal trainers. Perfect for beginners needing guidance or experienced athletes looking to break through plateaus.</p>
+                                    
+                                    <div class="service-features">
+                                        <h4>What's Included:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Initial fitness assessment</li>
+                                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Customized workout plans</li>
+                                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Nutrition guidance</li>
+                                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Progress tracking</li>
+                                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Form correction & injury prevention</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="pricing">
+                                        <p class="price">From $65/session</p>
+                                        <p class="price-note">Packages available at discounted rates</p>
+                                    </div>
+                                    
+                                    <a href="contact.html" class="btn btn-primary">Book a Session</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-panel" id="group-classes" role="tabpanel" aria-labelledby="tab-2" hidden>
+                            <div class="service-detail">
+                                <div class="service-image">
+                                    <img src="https://blog.afaa.com/hs-fs/hubfs/how-to-design-group-fitness-program.jpg?width=600&name=how-to-design-group-fitness-program.jpg" alt="Group fitness class with participants doing aerobics" loading="lazy">
+                                </div>
+                                <div class="service-info">
+                                    <h3>Group Fitness Classes</h3>
+                                    <p>Join our energizing group classes for motivation, community, and varied workouts. Suitable for all fitness levels with modifications provided by our expert instructors.</p>
+                                    
+                                    <div class="class-schedule">
+                                        <h4>Weekly Schedule Highlights:</h4>
+                                        <div class="schedule-grid">
+                                            <div class="schedule-item">
+                                                <h5>HIIT Blast</h5>
+                                                <p><i class="far fa-clock" aria-hidden="true"></i> Mon, Wed, Fri: 6:00 AM & 6:00 PM</p>
+                                                <span class="class-level intermediate">Intermediate</span>
+                                            </div>
+                                            <div class="schedule-item">
+                                                <h5>Power Yoga</h5>
+                                                <p><i class="far fa-clock" aria-hidden="true"></i> Tue, Thu: 7:00 AM & 7:00 PM</p>
+                                                <span class="class-level all-levels">All Levels</span>
+                                            </div>
+                                            <div class="schedule-item">
+                                                <h5>Spin Cycle</h5>
+                                                <p><i class="far fa-clock" aria-hidden="true"></i> Daily: 5:30 PM & 7:30 PM</p>
+                                                <span class="class-level beginner">Beginner Friendly</span>
+                                            </div>
+                                            <div class="schedule-item">
+                                                <h5>Strength & Conditioning</h5>
+                                                <p><i class="far fa-clock" aria-hidden="true"></i> Sat, Sun: 9:00 AM & 10:30 AM</p>
+                                                <span class="class-level intermediate">Intermediate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="membership-note">All classes included with membership. Drop-in rates available for non-members.</p>
+                                    
+                                    <a href="contact.html" class="btn btn-primary">View Full Schedule</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional tab panels would continue here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Plans -->
+        <section class="membership-plans" aria-labelledby="plans-heading">
+            <div class="container">
+                <h2 id="plans-heading" class="section-title">Membership Plans</h2>
+                <p class="section-subtitle">Choose the plan that fits your fitness journey</p>
+                
+                <div class="plans-grid">
+                    <article class="plan-card">
+                        <div class="plan-header">
+                            <h3>Basic</h3>
+                            <div class="plan-price">
+                                <span class="price">$39</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Gym access during staffed hours</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Basic equipment usage</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Locker room access</li>
+                                <li><i class="fas fa-times" aria-hidden="true"></i> Group classes</li>
+                                <li><i class="fas fa-times" aria-hidden="true"></i> Pool & spa access</li>
+                                <li><i class="fas fa-times" aria-hidden="true"></i> 24/7 access</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline">Choose Plan</a>
+                    </article>
+                    
+                    <article class="plan-card popular">
+                        <div class="plan-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Premium</h3>
+                            <div class="plan-price">
+                                <span class="price">$69</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 gym access</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> All equipment including premium</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Unlimited group classes</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Pool & spa access</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 2 guest passes per month</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 10% off personal training</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Choose Plan</a>
+                    </article>
+                    
+                    <article class="plan-card">
+                        <div class="plan-header">
+                            <h3>Ultimate</h3>
+                            <div class="plan-price">
+                                <span class="price">$99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Everything in Premium</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 1 personal training session/month</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Nutrition consultation</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 4 guest passes per month</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 20% off personal training</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Complimentary towel service</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline">Choose Plan</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <!-- Same footer structure -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>FitLife Gym</h3>
+                    <p>Your premier fitness destination with state-of-the-art equipment, expert trainers, and a supportive community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Watch our videos on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html" aria-current="page">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><span>Monday - Friday:</span> 5:00 AM - 11:00 PM</li>
+                        <li><span>Saturday:</span> 6:00 AM - 10:00 PM</li>
+                        <li><span>Sunday:</span> 7:00 AM - 9:00 PM</li>
+                        <li><span>Holidays:</span> 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Fitness Street, Health City</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@fitlifegym.com</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitLife Gym. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>This website is built with accessibility in mind. <a href="#main-content">Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

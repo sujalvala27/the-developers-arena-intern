@@ -1,0 +1,371 @@
+// Buttons
+.btn {
+  @include button($primary-color, white);
+  
+  &-primary {
+    @include button($primary-color, white);
+  }
+  
+  &-secondary {
+    @include button($secondary-color, white);
+  }
+  
+  &-accent {
+    @include button($accent-color, white);
+  }
+  
+  &-outline {
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  
+  &-large {
+    padding: $spacing-md $spacing-xl;
+    font-size: 1.1rem;
+  }
+  
+  &-full {
+    width: 100%;
+  }
+}
+
+// Cards
+.feature-card, .team-card, .plan-card {
+  @include card;
+  
+  h3 {
+    color: $dark-color;
+    margin-bottom: $spacing-sm;
+  }
+  
+  p {
+    color: $text-light;
+    line-height: $line-height-base;
+  }
+}
+
+.plan-card {
+  text-align: center;
+  position: relative;
+  
+  &.popular {
+    border: 2px solid $primary-color;
+    transform: scale(1.05);
+    
+    @include respond-to(md) {
+      transform: scale(1.1);
+    }
+  }
+  
+  .plan-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $accent-color;
+    color: white;
+    padding: $spacing-xs $spacing-md;
+    border-radius: $radius-sm;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .plan-header {
+    margin-bottom: $spacing-lg;
+    
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-sm;
+    }
+    
+    .plan-price {
+      .price {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $dark-color;
+      }
+      
+      .period {
+        color: $text-light;
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .plan-features {
+    margin-bottom: $spacing-lg;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        padding: $spacing-sm 0;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        align-items: center;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        i {
+          margin-right: $spacing-sm;
+          
+          &.fa-check {
+            color: $secondary-color;
+          }
+          
+          &.fa-times {
+            color: $text-light;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Navigation
+.main-nav {
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: $spacing-lg;
+    
+    @include respond-to(md) {
+      gap: $spacing-md;
+    }
+    
+    a {
+      color: $dark-color;
+      text-decoration: none;
+      font-weight: 600;
+      padding: $spacing-xs 0;
+      position: relative;
+      transition: color $transition-fast;
+      
+      &:hover,
+      &.active {
+        color: $primary-color;
+      }
+      
+      &.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+// Forms
+.form-group {
+  margin-bottom: $spacing-lg;
+  
+  label {
+    display: block;
+    margin-bottom: $spacing-xs;
+    font-weight: 600;
+    color: $dark-color;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: $spacing-md;
+    border: 1px solid $border-color;
+    border-radius: $radius-sm;
+    font-family: $font-body;
+    font-size: 1rem;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px rgba($primary-color, 0.1);
+    }
+  }
+  
+  .error-message {
+    color: $accent-color;
+    font-size: 0.9rem;
+    margin-top: $spacing-xs;
+    display: none;
+    
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  
+  input {
+    width: auto;
+    margin-right: $spacing-sm;
+  }
+  
+  label {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+}
+
+.form-success {
+  background-color: rgba($secondary-color, 0.1);
+  border: 1px solid $secondary-color;
+  border-radius: $radius-sm;
+  padding: $spacing-md;
+  margin-top: $spacing-lg;
+  display: flex;
+  align-items: center;
+  
+  i {
+    color: $secondary-color;
+    font-size: 1.5rem;
+    margin-right: $spacing-md;
+  }
+  
+  p {
+    margin: 0;
+    color: $dark-color;
+  }
+}
+
+// Testimonials slider
+.testimonials-slider {
+  position: relative;
+  
+  .testimonial {
+    display: none;
+    
+    &.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+  }
+  
+  blockquote {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: $dark-color;
+    padding: $spacing-xl;
+    background-color: $bg-light;
+    border-radius: $radius-lg;
+    margin-bottom: $spacing-lg;
+    position: relative;
+    
+    &::before {
+      content: '"';
+      font-size: 4rem;
+      color: rgba($primary-color, 0.2);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-family: Georgia, serif;
+    }
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: $radius-round;
+      object-fit: cover;
+      margin-right: $spacing-md;
+    }
+    
+    h4 {
+      margin: 0 0 $spacing-xs 0;
+      color: $dark-color;
+    }
+    
+    p {
+      margin: 0;
+      color: $text-light;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: $spacing-xl;
+  gap: $spacing-lg;
+  
+  .slider-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: $primary-color;
+    cursor: pointer;
+    padding: $spacing-sm;
+    border-radius: $radius-round;
+    
+    &:hover {
+      background-color: rgba($primary-color, 0.1);
+    }
+    
+    &:focus {
+      outline: 2px solid $primary-color;
+    }
+  }
+  
+  .slider-dots {
+    display: flex;
+    gap: $spacing-sm;
+    
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: $radius-round;
+      border: none;
+      background-color: $border-color;
+      cursor: pointer;
+      transition: background-color $transition-fast;
+      
+      &.active {
+        background-color: $primary-color;
+      }
+      
+      &:hover {
+        background-color: $primary-dark;
+      }
+      
+      &:focus {
+        outline: 2px solid $primary-color;
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
